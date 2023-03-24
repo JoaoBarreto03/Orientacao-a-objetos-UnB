@@ -3,11 +3,11 @@ public class Locatario {
 
     private Endereco endereco;
     private String email;
-    private int telefone;
+    private String telefone;
     private int quantLocacoes = 0;
     private boolean temLocacao = false;
 
-    public Locatario(Endereco endereco, String email, int telefone) {
+    public Locatario(Endereco endereco, String email, String telefone) {
         super();
         this.endereco = endereco;
         this.email = email;
@@ -29,11 +29,11 @@ public class Locatario {
         this.email = email;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 

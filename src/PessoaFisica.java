@@ -1,13 +1,11 @@
 public class PessoaFisica extends Locatario{
     private String nome;
     private String cpf;
-    private String estadoCivil;
 
-    public PessoaFisica(Endereco endereco, String email, int telefone, String nome, String cpf, String estadoCivil) {
+    public PessoaFisica(Endereco endereco, String email, String telefone, String nome, String cpf) {
         super(endereco, email, telefone);
         this.nome = nome;
         this.cpf = cpf;
-        this.estadoCivil = estadoCivil;
     }
     public String getNome() {
         return nome;
@@ -23,13 +21,5 @@ public class PessoaFisica extends Locatario{
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-
-    public String getEstadoCivil() {
-        return estadoCivil;
-    }
-
-    public void setEstadoCivil(String estadoCivil) {
-        this.estadoCivil = estadoCivil;
     }
 }
